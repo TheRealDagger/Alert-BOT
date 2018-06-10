@@ -35,7 +35,8 @@ fs.readdir("./commands/", (err, files) => {
 
 });
 bot.on("ready", async () => {
-	console.log(`${bot.user.username} is online!`);
+	console.log(`${bot.user.username} is on discord and ready to protect!`);
+	client.user.setActivity("Protect Discord Bot"):
 });
 bot.on("message", async message => {
 	if (message.author.bot) return;
